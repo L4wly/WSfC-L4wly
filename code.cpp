@@ -10,7 +10,7 @@
  * to handle different working hour categories. Finally, implement and run the code.
  */
 
-// You can reach all other branches from this link https://github.com/MhmtBH/WSfC
+// You can reach project from this link https://github.com/MhmtBH/WSfC
 
 #include <iostream>
 #include <cstdlib>
