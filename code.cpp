@@ -1,4 +1,4 @@
-// This project made by MehmetBH for IAU Homework
+// This project made by MehmetBH for IAU Assignment
 
 /*
  * TOPIC: Total Monthly Payroll Calculation
@@ -87,7 +87,7 @@ int main()
          << "0. Demo                         (This is a simulation of workers who work for different durations and have different hourly wages)" << endl
          << "1. Monthly Wage for workers     (Random Worker Hours & Wages)" << endl
          << "2. Company's Monthly expense    (Random Worker Hours & Wages + Default Other Expenses)" << endl
-         << "3. Advance Calculating          (Random Worker Hours & Wages + Custom Other Expenses)" << endl;
+         << "3. Advanced Calculating          (Random Worker Hours & Wages + Custom Other Expenses)" << endl;
     int x;
     cin >> x;
     switch (x)
