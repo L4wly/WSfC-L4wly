@@ -83,30 +83,48 @@ int main()
     int companyMonthlyExpense = totalWorkerWage + officeBills + Tax + officeRent + workersInsurance;
 
     // A basic terminal-based user interface for our project.
-    cout << "Write 0, 1 or 2 for choosing function " << endl
-         << "0. Monthly Wage for workers " << endl
-         << "1. Company's Monthly expense " << endl
-         << "2. Advance Calculating (You can change Company's expenses (Worker Insurance, Office Rent, Tax, Office Bills)) " << endl;
+    cout << "Write 0, 1, 2 or 3 for choosing function " << endl
+         << "0. Demo                         (This is a simulation of workers who work for different durations and have different hourly wages)" << endl
+         << "1. Monthly Wage for workers     (Random Worker Hours & Wages)" << endl
+         << "2. Company's Monthly expense    (Random Worker Hours & Wages + Default Other Expenses)" << endl
+         << "3. Advance Calculating          (Random Worker Hours & Wages + Custom Other Expenses)" << endl;
     int x;
     cin >> x;
     switch (x)
     {
-    // Output Function For Monthly Total Worker Wage
+    // Monthly Total Worker Wage Output Function (Each worker's working hours and wage differ)
     case 0:
+    {
+        int monthlyWorkerWage = 0;
+        for (int workerNumber = 0; workerNumber < 10; workerNumber++)
+        {
+
+            for (int workerHour = 1; workerHour < 11; workerHour++)
+            {
+
+                monthlyWorkerWage += (rand() % 100) * workerHour;
+            }
+        }
+        cout << monthlyWorkerWage << "$ Monthly Worker Wage (Demo)";
+        break;
+    }
+
+        // Output Function For Monthly Total Worker Wage
+    case 1:
 
         cout << totalWorkerWage << " $ wage for workers salary";
 
         break;
 
     // Output Function For Default Monthly Expenses
-    case 1:
+    case 2:
 
         cout << companyMonthlyExpense << " $ (Tax, Insurance and other bills is included in this amount)";
 
         break;
 
     // Output Function For Advanced Monthly Expenses
-    case 2:
+    case 3:
     {
 
         int u_workersInsurance = 0;
