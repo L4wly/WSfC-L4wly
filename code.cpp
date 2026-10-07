@@ -1,4 +1,4 @@
-// This branch edited by L4wly for IAU Assignment
+// This project made by MehmetBH & L4wly for IAU Assignment
 
 /*
  * TOPIC: Total Monthly Payroll Calculation
@@ -10,7 +10,7 @@
  * to handle different working hour categories. Finally, implement and run the code.
  */
 
-// You can reach project from this link https://github.com/MhmtBH/WSfC/tree/kerem-main
+// You can reach project from this link https://github.com/MhmtBH/WSfC
 
 #include <iostream>
 #include <cstdlib>
